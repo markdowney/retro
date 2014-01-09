@@ -1,0 +1,198 @@
+@mixin smooth($time:0.5s) {
+    @include transition(all $time ease-out);
+}
+
+.story { 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto;
+    // border-top: 1px solid rgba(255,255,255,0.3);
+    // border-bottom: 1px solid rgba(0,0,0,0.4);
+    // box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#first { 
+    background-color: #e74c3c;
+    height: 110%;
+    background-image: url('../images/fireworks-2.png');
+    background-repeat: no-repeat;
+    background-position: 50% 350px;
+
+
+    .title {
+        position: fixed;
+        width: 60%;
+        height: 60%;
+        top: 15%;
+        left: 20%;
+        margin: auto;
+        text-align: center;
+        color: white;
+
+        h1 {
+            font-size: 60px;  
+            line-height: 80px;  
+            margin: 0;
+        }
+        
+        .baker-hat {
+            background: url(../images/white-baker-hat.png) 50% 50% no-repeat;
+            width: 80px;
+            height: 93px;
+            margin: 60px auto 0 auto;
+        }
+    }
+
+    .sf {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+#second {
+    height: 3000px;
+    background-color: white;
+    
+    .calendar {
+        position: absolute;
+        left: 100px;
+        top: 50px;
+        z-index: 10;
+    }
+
+    .sticky-wrapper {
+        display: inline;
+    }
+
+    .stuck {
+        position: fixed;
+        
+        &.bottom {
+            position: absolute;
+            bottom: 100px;
+            top: auto;
+        }
+    }
+
+    .content {
+        margin-left: 450px;
+        z-index: 10;
+        padding: 0;
+        list-style: none;
+
+        a {
+            border-bottom: 1px dotted #2980b9;
+            color: #2980b9;
+            text-decoration: none;
+        }
+    }
+
+    .content li {
+        width: 50%;
+        line-height: 1.8em;
+        margin-bottom: 150px;
+        opacity: 0;
+        @include smooth(0.6s);
+    
+        &.active { opacity: 1;}
+        &:first-child { padding-top: 80px; }
+    }
+
+    .snow {
+        background-color: #9ACCED;
+        padding-bottom: 150px;
+        h1 {color: #2980b9;}
+        p { color: white;}
+    }
+
+    h2 {
+        color: #c0c0c0;
+        text-transform: uppercase;
+        @include smooth;
+
+        &.white {
+            color: white;
+        }
+    }
+
+    h2.active {
+        color: #363635;
+
+        &.white {
+            color: #2980b9;
+        }
+    }
+
+    .mountains {
+        background-image: url('../images/mountain/bgd.png');
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        height: 79px;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    .page-center {
+        width: 1020px;
+        position: relative;
+        margin: 0px auto;
+    }
+
+    .mountain-row {
+        width: 100%;
+        position: absolute;
+    }
+
+    .mountain1 {
+        position: absolute;
+        top: 67px;
+        left: -82px;
+    }
+
+    .mountain2 {
+        position: absolute;
+        top: 19px;
+        left: 320px;
+    }
+
+    .mountain3 {
+        position: absolute;
+        top: 33px;
+        left: 120px;
+    }
+
+    .mountain4 {
+        position: absolute;
+        top: 2px;
+        left: 586px;
+    }
+
+    .mountain5 {
+        position: absolute;
+        top: 14px;
+        left: 953px;
+    }
+
+}
+
+#third { 
+    background: url(../images/bakers.jpg) 50% 0 no-repeat fixed;
+    background-size: cover;
+    height: 900px;
+}
+
+.byebye {
+    background: url(../images/2014.png) 50% 100px no-repeat fixed;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+

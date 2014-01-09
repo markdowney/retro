@@ -2,8 +2,119 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-    <h1>Page</h1>
+
+    <div id="main" role="main">
+
+    <!-- Section #1 / Intro -->
+    <section id="first" class="story" data-speed="0.3" data-type="background" data-offsetY="350">        
+        
+        <div class="title">
+            <h1>The Bakery's<br> 2013 Retrospective</h1>
+            <div class="baker-hat"></div>
+        </div>
+
+        <img src="images/sanfrancisco-skyline.png" class="sf">
+
+    </section>
+
+    <!-- Section #2 / Background Only -->
+    <section id="second" class="story" data-speed="4" data-type="background">
+        
+        <div class="calendar">
+            <h2 class="january active">January</h2>
+            <h2 class="february">February</h2>
+            <h2 class="march">March</h2>
+            <h2 class="april">April</h2>
+            <h2 class="may">May</h2>
+            <h2 class="june">June</h2>
+            <h2 class="july">July</h2>
+            <h2 class="august">August</h2>
+            <h2 class="september">September</h2>
+            <h2 class="october">October</h2>
+            <h2 class="november">November</h2>
+            <h2 class="december">December</h2>
+        </div>
+
+
+        <ul class="content">
+            <li class="january" data="january">
+                <h1>The Bakery is Born</h1>
+                <p>3 Bakers in San Francisco, decide to travel the world while writing some code.</p>
+            </li>
+
+            <li class="february" data="february">
+                <h1>First 2 Clients</h1>
+                <p>Two San Francisco startups become The Bakery's first clients paving the way for adventures to come.</p>
+            </li>
+
+            <li class="march" data="march">
+                <h1>Techpeaks Application</h1>
+                <p>The Bakery applies to <a href="http://techpeaks.eu">Techpeaks</a>, a startup accelerator in the Italian Alps.</p>
+            </li>
+        </ul>
+
+        <div class="snow">
+
+            <div class="mountains">
+                <div class="mountain-row" data-speed="6" data-type="sprite" data-offsetY="260">
+                    <div class="page-center">
+                        <img src="images/mountain/1.png" class="mountain1">
+                        <img src="images/mountain/2.png" class="mountain2">
+                        <img src="images/mountain/3.png" class="mountain3">
+                        <img src="images/mountain/4.png" class="mountain4">
+                        <img src="images/mountain/5.png" class="mountain5">
+                    </div>
+                </div>
+            </div>
+
+            <ul class="content">
+
+                <li class="june" data="june">
+                    <h1>Moved to Trento</h1>
+                    <p>The Bakery is accepted at Techpeaks & setup their headquarters in the Alps.</p>
+                </li>
+
+                <li class="july" data="july">
+                    <h1>25K Grant</h1>
+                    <p>The Bakery get their first investment from <a href="http://techpeaks.eu">Techpeaks</a>, a 25K equity-free grant..</p>
+                </li>
+
+                <li class="august" data="august">
+                    <h1>Travel & Hospitality</h1>
+                    <p>Bakers go on a wild adventure throughout Italy and experiment with a new way of work: <a href="http://blog.thebakery.io/post/63566867979/coding-for-hospitality">"Coding for Hospitality"</a>.</p>
+                </li>
+
+                <li class="october" data="october">
+                    <h1>Shipping Projects</h1>
+                    <p>The Bakery keeps experimenting and ships new projects such as <a href="http://openmic.io">Openmic.io</a> and <a href="http://chatzilla.herokuapp.com/">Chatzilla</a>.</p>
+                </li>
+
+                <li class="november" data="november">
+                    <h1>Berlin Roadtrip</h1>
+                    <p>The Bakery <a href="http://blog.thebakery.io/post/66792551107/couch-surfing-berlin">goes surfing in Berlin</a> to attend Techcrunch Disrupt and lay the foundation for its future project.</p>
+                </li>
+
+                <li class="december" data="december">
+                    <h1>Citybeat Berlin</h1>
+                    <p><a href="http://citybeat.io">Citybeat.io</a> is launched helping techies get shit done in Berlin.</p>
+                </li>
+
+                <li class="december">
+                    <h1>New Adventures</h1>
+                    <p>Bakers wrap up the Italian chapter and head back to their hometowns to prepare for even wilder 2014 adventures.</p>
+                </li>
+            </ul>
+        </div>  
+    </section>
+    
+    <section id="third" class="story" data-speed="6" data-type="background" data-offsetY="600">     
+        <div data-type="sprite" data-speed="2" class="byebye" data-offsetY="200"></div>
+    </section>  
+
+</div>
+
     <!-- build:js scripts/app.compiled.js -->
     <script data-main="scripts/main" src="scripts/vendor/requirejs/require.js"></script>
     <!-- endbuild -->
+
 </body>

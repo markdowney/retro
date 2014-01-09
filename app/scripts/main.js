@@ -19,11 +19,17 @@ require.config({
         'backbone' : {exports: 'Backbone', deps: ['underscore']},
         'marionette' : {exports: 'Marionette', deps: ['backbone']},
         'json' : {exports: 'JSON'},
-        'handlebars' :  {exports: 'Handlebars'}
+        'handlebars' :  {exports: 'Handlebars'},
+        'waypoints' : {deps : ['jquery']},
+        'jquery-color' : { deps : ['jquery']},
+        'waypoints-sticky ' : { deps : ['jquery']}
     },
 
     paths: {
         jquery: 'vendor/jquery/jquery',
+        'jquery-color': 'tools/jquery.color-2.1.2',
+        'waypoints' : 'vendor/jquery-waypoints/waypoints',
+        'waypoints-sticky' : 'vendor/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky',
         underscore: 'vendor/underscore/underscore',
         backbone: 'vendor/backbone/backbone',
         marionette : 'vendor/backbone.marionette/lib/backbone.marionette',
